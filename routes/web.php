@@ -17,10 +17,11 @@ Route::get('contact', 'ContactFormController@create')->name('contact.create');
 Route::post('contact', 'ContactFormController@store')->name('contact.store');
 
 // MY CODE 
-Route::view('/', 'index');
+//Route::view('/', 'index');
 Route::get('/admin', 'HomeController@index')->name('admin');
 
 Route::get('/about', 'ViewController@aboutview')->name('about');
+Route::get('/', 'ViewController@index')->name('about');
 
 Route::get('/skills', 'ViewController@skillview')->name('skills');
 Route::get('/projects', 'ViewController@projectview')->name('projects');

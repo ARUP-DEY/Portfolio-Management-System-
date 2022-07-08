@@ -17,7 +17,11 @@ class ViewController extends Controller
 {
     public function index()
     {
-        return view('index');
+        $select = DB::table('abouts')->orderBy('updated_at', 'desc')->first();
+        return view ('index',[
+            'abouts'=>$select
+        ]);
+        
     }
     public function aboutview(){
         //$select = about::all();

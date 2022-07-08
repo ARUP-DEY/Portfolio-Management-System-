@@ -97,16 +97,18 @@
 										<br><br>
 										<br><br>
 										
-										<img src="img/default-avatar.png" alt="" />
+										<img src="{{ url('/uploads/about_profile/') }}/{{$abouts->pimage}}" alt="" />
 									</div>
 									<div class="name_holder">
-										<h4>Arup Dey</h4>
-									<!-- <h3>John M.<span> Doe</span></h3> -->									</div>
+										<!-- <h4>Arup Dey</h4> -->
+									<!-- <h3>John M.<span> Doe</span></h3> -->
+									<h3>Arup<span> Dey</span></h3>									
+									</div>
 									<div class="text_typing">
 										<p>Front-end Developer, UI/UX, Design Enthusisast</p>
 										<br>
 										<br>
-										<button>DOWNLOAD CV</button>
+										<button>DOWNLOAD CV</button><
 											<br><br>
 										<button>HIRE ME</button>
 									</div>
